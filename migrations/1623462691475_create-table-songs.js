@@ -20,7 +20,7 @@ exports.up = (pgm) => {
     },
     genre: {
       type: 'TEXT',
-      notNull: false,
+      notNull: true,
     },
     duration: {
       type: 'INTEGER',

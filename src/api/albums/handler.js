@@ -23,7 +23,7 @@ class AlbumsHandler {
         name, year,
       } = request.payload;
 
-      const AlbumId = await this._service.addAlbum({
+      const albumId = await this._service.addAlbum({
         name, year,
       });
 
@@ -31,7 +31,7 @@ class AlbumsHandler {
         status: 'success',
         message: 'Album berhasil ditambahkan',
         data: {
-          AlbumId,
+          albumId,
         },
       });
       response.code(201);
